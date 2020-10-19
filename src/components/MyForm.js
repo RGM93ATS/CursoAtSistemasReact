@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function MyForm({ oldName }) {
+const MyForm = ({ oldName }) => {
     const [name, setName] = useState(oldName || '')
 
     const handleChange = (event) => {
@@ -29,3 +29,5 @@ export default function MyForm({ oldName }) {
         </>
     )
 }
+
+export default MyForm

@@ -1,6 +1,15 @@
 import React from 'react'
 import propTypes from 'prop-types'
 
+const Name = ({ name }) => {
+    return (
+        <>
+            <h3>Podcast to listen: {name}</h3>
+            <h3>{name.startsWith('R') ? 'So good!' : 'OMG!'}</h3>
+        </>
+    )
+}
+
 const Hello = (props) => {
     let name2 =
         props.title === 'Hello Again'
@@ -16,15 +25,6 @@ const Hello = (props) => {
 
 Hello.propTypes = {
     title: propTypes.string.isRequired,
-}
-
-const Name = ({ name }) => {
-    return (
-        <>
-            <h3>Podcast to listen: {name}</h3>
-            <h3>{name.startsWith('R') ? 'So good!' : 'OMG!'}</h3>
-        </>
-    )
 }
 
 export default Hello
