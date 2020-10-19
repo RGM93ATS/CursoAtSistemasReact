@@ -25,7 +25,7 @@ export default function MyForm({ oldName }) {
                 />
                 <input type="submit"></input>
             </form>
-            <h1>{name}</h1>
+            <h1>Hi! {name}</h1>
         </>
     )
 }
